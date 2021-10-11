@@ -1,0 +1,540 @@
+body{
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(133, 133, 133, 1);
+  font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+a:hover{
+  transition: all 0.5s ease;
+  letter-spacing: 2px;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.active{
+  color: rgba(210, 201, 116, 1);
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.nav a{
+  font-weight: bold;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+}
+.navbar a:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: #ddd;
+  color: black;
+}
+.nav .container{
+  display: flex;
+  justify-content: space-between;
+}
+.nav .list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  float: right;
+  margin-top: 25px;
+}
+.nav li{
+  padding-left: 20px;
+}
+.nav li:first-child{
+  padding: 0;
+}
+.nav .mainbutton{
+  width: 100px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding:20px;
+  margin-top:20px;
+}
+.nav .dropdown{
+  position: relative;
+  width: 100px;
+  margin: 0 auto;
+}
+.nav .dropdown img{
+  width: 20px;
+  height: 20px;
+}
+.nav .dropdown-child{
+  display: none;
+  background-color: black;
+  min-width: 200px;
+}
+.nav .dropdown-child a{
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+.nav .dropdown-child a:hover{
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.nav .dropdown:hover img{
+  transition: all 0.5s ease;
+  transform: rotate(90deg);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.nav .dropdown:hover .dropdown-child {
+  display: block;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.nav .logo a:hover{
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: rotate(5deg);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.nav .logo img{
+  width: 100px;
+  height: 75px;
+  float: left;
+}
+.header{
+  margin-top: 110px;
+  background: url('../img/bg-main.jpg') no-repeat center top;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+.header .welcome{
+  color: white;
+}
+.header .row-2{
+  margin-top: 200px;
+  z-index: 1;
+  position: absolute;
+  width: 600px;
+  height: 230px;
+  background-color: rgba(57, 57, 57, 0.7);
+}
+.header .welcome h1{
+  text-transform: uppercase;
+  font-size: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.header .welcome p{
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+
+.main{
+  background-color: rgba(229, 243, 249, 1);
+}
+.main .container{
+  width: 71%;
+  margin: 0 auto;
+}
+.main h2{
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+.main .info{
+  padding: 40px 0;
+  text-align: center;
+}
+.main .info table{
+  margin: 50px 0;
+}
+.main .info table th{
+  padding: 10px 0;
+  border-bottom: 3px solid black;
+  width: 33.33%;
+  line-height: 30px;
+  font-size: 26px;
+}
+.main .info table td{
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+  width: 33.33%;
+  line-height: 30px;
+  font-size: 22px;
+}
+.main .dots{
+  padding-top: 20px;
+  color: rgba(37, 108, 175, 1);
+  font-size: 40px;
+  font-weight: bold;
+}
+.main .infomation1{
+  padding-top: 40px;
+}
+.main p{
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+
+
+.main .cards{
+  padding-top: 70px;
+  background: url('../img/bg-main2.jpg') no-repeat center top;
+  background-size: cover;
+}
+.main .cards h3{
+    color: white;
+}
+.main .cards .discription{
+  width: 70%;
+  margin: 15px auto;
+  color: white;
+  line-height: 26px;
+}
+.main .pic1, .pic2, .pic3{
+}
+.main .cards .discription{
+  width: 65%;
+  margin: 15px auto;
+}
+.main .button{
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 100px;
+}
+.main .button:last-child{
+  margin-bottom: 0;
+  padding-bottom: 120px;
+}
+
+.main .pic1, .main .pic2, .main .pic3{
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .card1, .main .card2, .main .card3{
+  padding-top: 20px;
+}
+.main .pic1 img, .main .pic2 img, .main .pic3 img{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  width: 150px;
+  height: 150px;
+}
+.main .pic1 p, .main .pic2 p, .main .pic3 p{
+  float: left;
+}
+.main .card1 button,  .main .card2 button,  .main .card3 button{
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  text-transform: uppercase;
+  font-size: 18px;
+  height: 24px;
+  width: 200px;
+  margin: 10px;
+}
+.main .card1 button a, .main .card2 button a, .main .card3 button a{
+  color: white;
+}
+.main .card1 button a:hover, .main .card2 button a:hover, .main .card3 button a:hover{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+.main .card1 button:hover, .main .card2 button:hover, .main .card3 button:hover{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.main h3{
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.main .animals{
+  border-top: 2px solid black;
+  background-color: rgba(57, 57, 57, 0.7);
+  height: 100px;
+  text-align: center;
+}
+.main .animals p{
+  padding-top: 20px;
+}
+.main .animals a{
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+
+/*about*/
+.main .introducing{
+  text-align: center;
+  padding: 50px;
+}
+.main .photos{
+  text-align: center;
+  background-color: rgba(213, 226, 235, 0.7);
+  padding: 200px;
+}
+.main .photos .container{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+.main .photos img{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 800px;
+  height: 600px;
+  margin-bottom: 50px;
+}
+.main .photos h4{
+  font-weight: normal;
+  font-size: 43px;
+  text-align: center;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+}
+
+
+
+/*contact*/
+.main .contact{
+  line-height: 26px;
+  font-size: 18px;
+  background-color: rgba(213, 226, 235, 0.7);
+  line-height: 24px;
+  padding: 50px 0;
+}
+.main .IfUHave{
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 26px;
+  font-size: 20px;
+}
+.main .contact .container{
+  width: 60%;
+}
+.main .contact .container a:hover{
+  text-decoration: underline;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.contact1, .contact2, .contact3, .contact4, .contact5{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .contactsInfo li{
+  text-align: left;
+  opacity: 0.8;
+}
+.main .contact img{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+
+
+/*animals*/
+.main .allanimals{
+  padding: 150px 0;
+  background-color: rgba(213, 226, 235, 0.7);
+}
+.main .allanimals .linking{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .allanimals .linking a{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+.main .allanimals .linking a:hover{
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.animal-h3{
+  line-height: 100px;
+}
+.animal1, .animal2, .animal3, .animal4{
+  text-align: center;
+  padding: 50px 0;
+}
+.animal1 h3 a, .animal2 h3 a, .animal3 h3 a, .animal4 h3 a{
+  padding: 5px 15px;
+}
+.main .allanimals p{
+  opacity: 0.7;
+  padding: 50px 0 0 0;
+}
+.main .allanimals img{
+  box-shadow: 3px 3px 10px black;
+  text-align: center;
+  width: 100%;
+}
+#TIGER, #MONKEY, #ELEPHANT, #PANDA{
+  width: 100%;
+  height: 130px;
+}
+.tiger h2, .panda h2, .elephant h2, .monkey h2{
+  letter-spacing: 2px;
+  font-size: 45px;
+}
+.tiger img, .panda img, .elephant img, .monkey img{
+  display: block;
+  margin: 40px auto;
+  width: 80%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.tiger p, .panda p, .elephant p, .monkey p{
+  text-align: justify;
+}
+
+
+
+.content-animal{
+  padding: 100px 0;
+}
+
+
+
+.comment{
+  background-color: rgba(213, 226, 235, 0.7);
+  padding: 50px 0;
+}
+#contact-area h3{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+#page-wrap {
+  text-align: center;
+	width: 660px;
+	background: #f2f2f2;
+	padding: 30px 50px 30px 50px;
+	margin: 70px auto;
+	min-height: 500px;
+	height: auto;
+	height: 500px;
+}
+#contact-area {
+	width: 600px;
+  margin: 25px auto auto 0;
+}
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+#contact-area textarea {
+	height: 90px;
+}
+#contact-area input.submit-button {
+	width: 100px;
+}
+input:focus{
+  box-shadow: 1px 1px 15px black;
+}
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+.submit-button{
+  text-align: center;
+  background-color: white;
+}
+.submit-button:hover{
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.footer{
+  background-color: #f2f2f2;
+  height: 300px;
+}
+.footer .listBottom{
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  padding-top: 0px;
+}
+.footer .navBottom{
+  padding-top: 20px;
+  line-height: 40px;
+}
+.footer li a{
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.footer li a:hover{
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+@media screen and (max-width: 1140px) {
+  .main .discription p{
+    line-height: 30px;
+  }
+  .main .photos{
+    display: block;
+    margin: 0 auto;
+  }
+  .main .photos img{
+    width: 80%;
+    height: auto;
+    text-align: center;
+  }
+}
